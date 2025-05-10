@@ -1,0 +1,326 @@
+<!--Feedback Page--> 
+
+
+<!DOCTYPE html>
+
+<html lang=en>
+       
+    <head>
+    
+        
+        <!--Head With Meta Information, Font import linking & Page Title-->
+    
+        <link rel="stylesheet" type=text/css href=css/index.css>
+    
+            <meta charset="UTF-8">
+            <meta name="Electric Picnic" content="Accesibility Information">
+            <meta name="Festival, EP, Electric Picnic" content="HTML, CSS, JavaScript">
+            <meta name="Laurie Johnson" content="Information on Accesibility">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        
+        <title>Feedback Form</title>
+        
+        
+    </head>
+    
+    <body>
+    
+    
+<!--Header Semantic tag including centered title image-->
+        
+        <header>
+        
+        
+        <div class="topimg">
+         
+        
+            <img src="images/EP-2019_Logo_Main_Black.png" class="headerimage" alt="Electric Picnic Main Logo">
+            
+            </div>
+            
+            
+        </header>
+    
+<!--Navigational Semantic Tag with Nav Bar Contents, Active classing and dropdown menu-->
+        
+        
+     <nav>
+        
+        <div class="topnav">
+        
+            <ul>
+
+                <li><a href="index.html" id="curve1">Home</a></li>
+                <li><a href="whatsnew.html">Whats New?</a></li>
+                <li><a href="teamstatement.html" >Team Statement</a></li>
+                <li><a href="medication.html">Medication</a></li>
+                <li><a href="companions.html">Companions</a></li>
+                
+                <li class="dropdown" tabindex="0">
+                <button class="dropbtn">Site</button>
+                <div class="dropdown-content">
+                <a href="grounds.html">Grounds</a>
+                <a href="transport.html">Transport</a>
+                <a href="map.html">Map</a>
+                </div>
+                </li>
+                
+                
+                
+                <li><a href="feedback.html" id="curve2" class="active">Feedback</a></li>
+
+
+            </ul>
+
+        </div>
+            
+        </nav>     
+        
+
+<!--Form Html--> 
+        
+            <form action="userdata.html" method="get" enctype="multipart/form-data">
+        
+        
+                    <fieldset>
+
+                        
+                        <legend>Name </legend>
+
+
+                    <div class="divA">
+                    <label for="firstname" >First name: </label>
+                    <input name="firstname" placeholder="First Name"  id="firstname" required>
+                    </div>
+                        
+                    <div class="divA">
+                    <label for="lastname">Last name: </label>
+                    <input name="lastname" placeholder="Last Name"  id=lastname>
+                    </div>
+                        
+               
+
+
+                    </fieldset>
+
+
+            
+        
+        
+        
+        
+        
+        
+        <fieldset>
+
+                            
+                            <legend> Your Info </legend>
+
+
+                        <div class="divB">
+                        <label for="email"> Email: </label>
+                        <input type="email" placeholder="Email"  name="email" id="email">
+                        </div>
+
+                        <div class="divB">
+                        <label for="age">Age: </label>
+                        <input type="number" placeholder="Age"  name="age" min="10" max="20">
+                        </div>
+
+
+                        <div class="divB">
+                        <label for="tel">Phone:</label>
+                        <input placeholder="Phone" name="tel" id="tel">
+                        </div>
+
+                        <div class="divB">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" id="dob">
+                        </div>
+
+                      
+        
+        </fieldset>
+
+        
+        
+        
+        
+        
+        
+        
+                    <fieldset>
+
+                    
+                        
+                        
+                        <legend>Survey</legend>
+
+
+                        
+ 
+                        
+                        <p>Are you an attendee or a carer?</p>
+
+           <div class="radio">
+                        
+      
+
+                            <div class = "radio">
+                            <div class="left">
+                            <input type="radio" name="subject" id="1" value="1">
+                            <label for="1">Attendee</label>
+                            </div>
+
+
+                             <div class="right">
+                            <input type="radio" name="subject" id="2" value="2">
+                            <label for="2">Carer</label>
+                            </div>
+               </div>
+                            
+            </div>
+
+
+            
+            
+        
+        
+        </fieldset>
+    
+        
+        
+        
+        
+        
+        <fieldset>
+        
+            
+            <legend>Feedback</legend>
+    
+            
+            <div class="divD">       
+            <label for="easter">Are you planning to attend?</label>
+            
+                <select name="easter" id="easter">
+            
+                
+             
+                <option value="egg">Yes</option>
+                <option value="mini">No</option>
+
+          
+                
+                <optgroup label="Other">
+                <option value="Sweets">Unsure</option>
+         
+                </optgroup>
+
+            </select>
+        </div> 
+            
+            
+            
+            <p>We would love to hear your feedback!</p> <br><br>
+            
+            
+            <div>
+            <label for="bunnytext">Enter it below!</label>
+            <textarea name="bunnytext" id="bunnytext" placeholder="Tell us what you thought of our facilities, website and any general questions you have. Attatch any relevent documents below!" cols="50" rows="5"></textarea> 
+            </div>
+            
+            
+            
+            
+            <div>
+            <label for="myfile">Select a file: </label>
+            <input type="file" name="myfile" id="myfile">
+            </div>
+            
+        
+        
+        
+        
+        
+        
+        </fieldset>
+        
+        
+        
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+        
+        
+        
+        
+        </form>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ <!--Audio for visually impaired-->
+        
+                    <div class="audio">
+        
+        <audio controls autoplay>
+        
+        <source src="audio/form.mp3" type="audio/mpeg">
+        
+        </audio>    
+            
+        </div>    
+        
+        
+        
+<!--Footer With External Links-->    
+        
+        <footer>
+            
+            
+            <div class="footernav">
+            
+                <ul>
+                
+                <li><a href="https://electric-picnic-cs.zendesk.com/hc/en-gb/requests/new?ticket_form_id=28870431707149&_ga=2.155102971.2124420281.1746881800-51783093.1744314648" target="blank">Contact</a></li>
+                <li><a href="https://www.electricpicnic.ie/information/" target="blank">Help</a></li>
+                <li><a href="https://www.electricpicnic.ie/terms/" target="blank">Terms & Conditions</a></li>
+                    
+                </ul>
+        
+                
+            </div>
+        
+        
+        
+        
+        
+        </footer>
+    
+
+    </body> 
+    
+</html>
